@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    /* https://images-eu.ssl-images-amazon.com/images/G/31/prime/Jup23/acq/T1/heroes/Homepage_DesktopHeroTemplate_3000x1200_22June2023_ft._CB578616335_.jpg */
+        *{
+            margin: 0;
+            padding: 0;
+            border: border-box;
+        }
+        .header{
+            background-color: rgb(19,25,33);
+            height: 60px;
+            /* max-width: 1324px; */
+        }
+        .container{
+            /* background-color: red; */
+            width: 99%;
+            height: 60px;
+            margin: auto;
+            /* border: 1px solid white; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        /* .container>div:hover{
+                border: 1px solid white;
+        } */
+        .logo-container{
+            width: 10%;
+            height: 58px;
+            display: flex;
+            /* margin-top: 5px; */
+        }
+        .location{
+            color: white;
+            display: flex;
+            height: 60px;
+            margin-top: 10px;
+
+        }
+        p{
+            color: white;
+            margin-top: 10px;
+            /* font-size: 17px; */
+        }
+        .icon-location{
+            color: white;
+            display: flex;
+        }
+        span{
+            color: white;
+        }
+        .location .icon-location {
+        /* display: flex; */
+        align-items: center;
+        }
+        #location-icon{
+            margin-left: -55px;
+            margin-top: -2px;
+        }
+        div>span+p{
+            /* display: flex; */
+            margin-left: -38px;
+            font-size: 20px;
+        }
+        .All{
+            display: flex;
+            max-width: 620px;
+            height: 42px;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 4px;
+            margin-left: 10px;
+            justify-content: space-evenly;
+            /* border: none; */
+            border-bottom-left-radius: 4px;
+            
+            
+        }
+        .select-serch{
+            width: 52px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;
+            background-color: rgb(212,212,212);
+            height: 42px;
+
+        }
+        .serch-input{
+            max-width: 500px;
+            width: 100%;
+            border: none;
+            padding: 20px;
+
+        }
+        .search-icon {
+               max-width: 45px;
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-size: 1.2rem;
+               background: #febd68;
+               color: #000;
+               cursor: pointer;
+               border-top-right-radius: 4px;
+               border-bottom-right-radius: 4px;
+        }
+        .serch-bar{
+            background-color: #febd68;
+            width: 60px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        i{
+            color: white;
+            margin-top: 13px;
+            margin-left: 13px;
+           
+        }
+        .flag{
+            display: flex;
+            margin-right: 10px;
+        }
+        .flag>img{
+            width: 30%;
+            height: 30px;
+            margin-top: 16px;
+            margin-left: 25px;
+        }
+        .sign-in{
+            display: flex;
+        }
+        .adjust{
+            margin-top: 25px;
+            margin-left: -86px;
+            font-size: 19px;
+        }
+        .return{
+            display: flex;
+        }
+        .and-order{
+            margin-top: 28px;
+            margin-left: -45px;
+            font-weight: bold;
+        }
+        .cart{
+            display: flex;
+            margin-left: 10px;
+        }
+        /* ******************2nd label******************************************************************************************** */
+        .second-label{
+            width: 100%;
+            height: 40px;
+            /* border: 1px solid blue; */
+            background-color:rgb(35,47,62);
+            display: flex;
+            color: white;
+            font-weight: bold;
+           
+        }
+        .All-2{
+            color: white;
+            width: 40px;
+            padding-left: 20px;
+            padding-right: 30px;
+            /* font-size: 16px; */
+        }
+        .Amazone-mini{
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 9px;
+            /* margin-top: 13px; */
+            font-weight: bold;
+        }
+        .prime-select{
+            border: none;
+            background: none;
+            color: white;
+            margin-top: 13px;
+        }
+        .minitv{
+            width: 0%;
+            margin-left: 50px;
+        } 
+        /* .background-img{
+            width: 100%;
+            height: 700px;
+        }  */
+        .second-label>div:hover{
+            border: 1px solid wheat;
+        }
+        .background-image{
+             
+            background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/Baby/cnnjpp1/Baby/Cons_uber_Sldie_1500._CB598664876_.jpg); 
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end;
+
+            
+        }
+        .column-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr);
+            column-gap: 10px;
+            row-gap: 20px;
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 96%;
+            margin-top: 270px;
+            margin-right: 23px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+        }
+       .item2{
+        /* border: 2px solid rebeccapurple; */
+        background-color: aliceblue;
+        width: 96%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* justify-content: space-between; */
+       
+       }
+       .item2>img{
+         width: 90%;
+         height: 270px;
+         margin: auto;
+         margin-top:15px ;
+         margin-left: 15px;
+         justify-content: center;
+         align-items: center;
+         
+       }
+       .item2 .great-indian-fest{
+        color: #000;
+        font-size: 25px;
+        font-weight: bold;
+        padding-left: 15px;
+        margin-top: 20px;
+       }
+       .shop-now{
+        color: deepskyblue;
+        margin-top: 29px;
+        margin-left: 16px;
+        font-size: 17px;
+       }
+       .hover-img:hover{
+           border: 1px solid white;
+       }
+       .offer{
+        color: deepskyblue;
+        margin-top: 13px;
+        margin-left: 16px;
+        font-size: 17px;
+       }
+       .item2-container{
+            /* display: grid; */
+            /* grid-template-columns: repeat(2,1fr); */
+            /* grid-template-rows: repeat(4,1fr); */
+            /* column-gap: 10px; */
+            /* row-gap: 20px; */
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* padding-top: 70px; */
+            
+            /* margin-top: 270px; */
+            /* margin-right: 23px; */
+       }
+       .jemu1-container{
+          /* border: 1px solid red; */
+          /* padding-top: 50px; */
+          height: 50px;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(2,1fr);
+          gap: 20px;
+          /* margin-top: 50px; */
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       .jemu1{
+          color: black;
+          /* border: 1px solid red; */
+          height: 120px;
+       }
+       .applies{
+          width: 100%;
+          height: 120px;
+       }
+       .applies-para{
+          color: black;
+          font-size: 15px;
+          margin-top: -5px;
+       }
+       .item3-container{
+            
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       .item4-container{
+            
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       .item5-container{
+            
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       .item6-container{
+            
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       }
+       .item7-container{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            margin: auto;
+            
+       }
+       .item8-container{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            margin: auto;
+            
+       }
+       .item9-container{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            margin: auto;
+            
+       }
+       .item10-container{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 96%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-weight: bold;
+            height: 380px;
+            margin: auto;
+            
+       }
+       .hover-img:hover{
+         border: 2px solid white;
+       }
+       /* *********************third part******************************************************************************************* */
+       .third-container{
+          /* border: 1px solid black; */
+          width: 99%;
+          height: 440px;
+          margin: auto;
+          margin-top: 870px;
+          /* display: flex; */
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          /* margin: auto; */
+       }
+       .third-item1{
+         /* border: 1px solid black; */
+         width: 100%;
+         height: 60px;
+         padding-top:30px ;
+         padding-left: 25px;
+         font-size: 25px;
+         font-weight: bold;
+         /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+       }
+       .third-item2{
+        /* border: 1px solid rebeccapurple; */
+        display: flex;
+        /* margin: auto; */
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        width: 98%;
+        height: 330px;
+       }
+       .third-product{
+         /* border: 1px solid blue; */
+         width: 250px;
+         justify-content: space-between;
+         margin-left: 15px;
+         background-color: rgb(247,248,248);
+       }
+       .third-photo{
+          width: 60%;
+          height: 200px;
+          /* border: px solid black; */
+          justify-content: center;
+          margin-top: 10px;
+          margin-left: 50px;
+          background-color: aquamarine;
+          
+       }
+       .third-button{
+        margin-top: 40px;
+        background-color: rgb(204,12,57);
+        border-radius: 3px;
+        color: white;
+        width: 110px;
+        height: 26px;
+        border: none;
+       }
+       .third-span{
+        color: rgb(204,12,57);
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 4px;
+       }
+       .third-para{
+          color: black;
+          font-size: 14px;
+          padding-left: 40px;
+       }
+       .third-photo-2{
+        width: 100%;
+       
+        
+          height: 150px;
+          /* border: px solid black; */
+          justify-content: center;
+          margin-top: 57px;
+          /* margin-left: 10px; */
+          background-color: aquamarine;
+       }
+       .fourth-container{
+          /* border: 1px solid black; */
+          width: 99%;
+          height: 330px;
+          margin: auto;
+          margin-top: 20px;
+          /* display: flex; */
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          /* margin: auto; */
+       }
+       .fourth-child1{
+         /* border: 1px solid black; */
+         width: 100%;
+         height: 30px;
+         padding-top:30px ;
+         padding-left: 25px;
+         font-size: 25px;
+         font-weight: bold;
+         /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+       }
+       .fourth-child2{
+          /* border: 1px solid red; */
+          width: 100%;
+          height: 270px;
+          display: flex;
+       }
+       .fourth-product{
+        display: flex;
+        /* border: 1px solid blue; */
+        margin: auto;
+       }
+       .fifth-container{
+         /* border: 1px solid black; */
+         width: 99%;
+         height: 300px;
+         margin: auto;
+         margin-top: 25px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+       }
+       .fifth-photo{
+         width: 97%;
+         height: auto;
+         margin: auto;
+         margin-top: 12px;
+         margin-left: 20px;
+        
+       }
+       .sixth-container{
+         /* border: 1px solid black; */
+         width: 99%;
+         height: 330px;
+         margin: auto;
+         margin-top: 25px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+       }
+       .sixth-child1{
+         /* border: 1px solid black; */
+         width: 100%;
+         height: 30px;
+         padding-top:30px ;
+         padding-left: 25px;
+         font-size: 25px;
+         font-weight: bold;
+         /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+       }
+       .sixth-child2{
+          /* border: 1px solid red; */
+          width: 98%;
+          height: 300px;
+          display: flex;
+       }
+       .sixth-photo{
+         width: 97%;
+         /* height: auto; */
+         margin: auto;
+         margin-top: 12px;
+         margin-left: 20px;
+        
+       }
+    </style>
+</head>
+
+<body >
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                    <img src="https://i0.wp.com/www.dafontfree.co/wp-content/uploads/2021/11/Amazon-Logo-Font-1-scaled.jpg?fit=2560%2C1578&ssl=1" alt="logo">
+                
+            </div>
+           <div class="location">
+                <p>Hello</p>
+                <div class="icon-location">
+                    <i id="location-icon" class="fa-solid fa-location-dot"></i>
+                    <p>&nbsp; Select your address</p>
+                </div>
+           </div>
+           <!-- *******************serch bar********************************************************************** -->
+            <div class="All">
+                
+                <select class="select-serch" name="select-serch" id="">
+                    <option  value="">All</option>
+                    <option>All Categories</option>
+                    <option>Amazon Devices</option> 
+                    <option >Abhishek</option>
+                    <option value="">Anklesh</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" name="serch Amazone" class="serch-input">
+
+                <div class="serch-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                
+            </div> 
+            <!-- *************flag******************************************************************************8 -->
+            <div class="flag">
+                <img src="https://cdn-icons-png.flaticon.com/512/5281/5281504.png" alt="">
+                <p style="margin-top: 20px;font-size: 20px;"  >EN</p>
+                <select style="background-color: rgb(19,25,33); color: white; border: none; height: 30px;margin-top: 22px;margin-left: -2px;" name="" id=""></select>
+            </div> 
+
+            <div class="sign-in">
+                <p>&nbsp;&nbsp; Hello,sign in</p>
+                <div class="sing-select">
+                    <p class="adjust"> &nbsp; Account & List <select style="background-color: rgb(19,25,33);color: white;border: none;" name="" id=""></select></p>
+                </div>
+
+            </div>
+           <div class="return">
+                <p>&nbsp;&nbsp; &nbsp;&nbsp;Return</p>
+                <div >
+                    <p class="and-order">& Order</p>
+                </div>
+            </div> 
+           
+           <div class="cart">
+                <i style="font-size: 33px;margin-left: 14px;" class="fa-solid fa-cart-shopping"></i><span style="margin-top: 29px; font-weight: bold;">Cart</span>
+           </div>
+        </div>
+    </header>
+    <div class="second-label">
+        <div class="All-2">
+            <i  class="fa-solid fa-bars">All</i>
+           <!-- <div class="">All</div> -->
+        </div>
+        <div class="Amazone-mini"> Amazone miniTv</div>
+        <div class="sell" style="padding: 9px; font-weight: bold;" > Sell</div>
+        <div style="padding: 9px; font-weight: bold;" >Best Seller</div>
+        <div style="padding: 10px;">Mobile</div>
+        <div style="padding: 10px;">Today's Deals</div>
+        <div style="padding: 10px;">New Releases</div>
+        <div>Prime <select style="margin-left: -8px;margin-top: 13px;" class="prime-select" name="prime-select" id=""></select></div>
+        <div style="padding: 10px;">Customer Service</div>
+        <div style="padding: 10px;">Electronic</div>
+        <div class="minitv">
+            <img src="https://m.media-amazon.com/images/G/31/img19/SiddMiniTV/SWM/SWM_400x39_SchoolFriends_V1._CB596213126_.jpg" alt="">
+        </div>
+    </div>
+    
+    <div class="background-image">
+       
+        <div class="column-container"> 
+               <div class="item2">
+                     <p class="great-indian-fest">Great Indian Festival</p>
+                    <img class="hover-img" src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/J23_PC_CC_V2_1x._SY304_CB577183061_.jpg" alt="">
+                    <p class="shop-now"> See all offers</p>
+                </div>
+               <div class="item2">
+                    <p class="great-indian-fest">Blutooth Calling <br>Smartwatch Starts at...</p>
+                    <img class="hover-img" style="height: 240px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PC_CategoryCard_379X304_1._SY304_CB614835787_.jpg" alt="">
+                    <p class="shop-now">Shop Now</p>
+                </div>
+               <div class="item2">
+                    <p class="great-indian-fest"> Up to 40% off | Mobiles & <br> Accessories</p>
+                    <img class="hover-img" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/lshruthi/Jupiter/WTS/GW/BTF/Jupiter1_Desktop_CC_379X304._SY304_CB577228857_.jpg" alt="">
+                    <p class="offer">See all offers</p>
+                </div>
+               <div class="item2">
+                    <p class="great-indian-fest" >Up to 70% off | <br> International brands</p>
+                    <img class="hover-img" src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/diwali/1/2/Desktop._SY304_CB577245072_.jpg" alt="">
+                    <p class="offer">See all offers</p>
+                </div>
+               <div class="item2">
+                     <p class="great-indian-fest">Starting ₹349 | <br>Bestselling headphones</p>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/GW/CC/Headphones_Desktop_Cat_Card_1x_1._SY304_CB575831742_.jpg" alt="">
+                    <p class="offer">Shop Now</p>
+                </div>
+               <div class="item2">
+                    <p class="great-indian-fest">Up to 80% off | Laptops, <br>smartwatches &</p>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Scroll/Camera/Topdeal/n/Desktop_CC._SY304_CB575822413_.jpg" alt="">
+                    <p class="offer">see all offer</p>
+                </div>
+                <!-- <p class="bade-word">Up to 70% off | Products from stores near you</p> -->
+               <div class="item2-container">
+                     <div > &nbsp; Up to 70% off | Products  &nbsp;  &nbsp;  &nbsp; from stores near you </div>
+                     <br>
+                        <div class="jemu1-container">
+                            <div class="jemu1">
+                                <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/Appliances_186x116_Jupiter-23_PC_QC._SY116_CB575769983_.jpg" alt="">
+                                <p class="applies-para">Applieces</p>
+                            </div>
+                        
+                            <div class="jemu1">
+                                <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/Furniture186X116_Jupiter-23_PC_QC._SY116_CB575769983_.jpg" alt="">
+                                <p class="applies-para">furnitures</p>
+                            </div>
+                            <div class="jemu1">
+                                <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/Home186X116_Jupiter-23_PC_QC._SY116_CB575769983_.jpg" alt="">
+                                <p class="applies-para">Home</p>
+                            </div>
+                            <div class="jemu1">
+                                <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/Kitchen186X116_Jupiter-23_PC_QC._SY116_CB575769983_.jpg" alt="">
+                                <p class="applies-para">Kitchen</p>
+                            </div>
+                        </div>
+
+                    
+                   
+               </div>
+               <div class="item3-container">
+                    <div> &nbsp;   Starting ₹199 | Shoes,<br>  &nbsp;  jewellery & more</div>
+                    <br>
+                    <div class="jemu1-container">
+                        <div class="jemu1">
+                            <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Jupiter_2023/PCQC/Revised1/Sports_low._SY116_CB577519404_.png" alt="">
+                            <p class="applies-para">Sports Shoes</p>
+                        </div>
+                    
+                        <div class="jemu1">
+                            <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Jupiter_2023/PCQC/Revised1/Jewl_low_2._SY116_CB577519404_.jpg" alt="">
+                            <p class="applies-para">Jewellery</p>
+                        </div>
+                        <div class="jemu1">
+                            <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Jupiter_2023/PCQC/Revised1/Low_anushka._SY116_CB577519522_.jpg" alt="">
+                            <p class="applies-para">SmartWatch</p>
+                        </div>
+                        <div class="jemu1">
+                            <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Jupiter_2023/PCQC/Revised1/Safari_low_res._SY116_CB577512054_.jpg" alt="">
+                            <p class="applies-para">Bags</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="item4-container">
+                <div > &nbsp; Starting ₹199 | Fashion & <br> &nbsp; beauty</div>
+                <br>
+                   <div class="jemu1-container">
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/PC-QC/Rev/WF-1-186-116-min._SY116_CB577681584_.png" alt="">
+                           <p class="applies-para">Woman's Clothing</p>
+                       </div>
+                   
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/PC-QC/Rev/WF-2-186-116-min._SY116_CB577681584_.png" alt="">
+                           <p class="applies-para">Footware</p>
+                       </div>
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/PC-QC/Rev/WF-3-186-116-min._SY116_CB577681584_.png" alt="">
+                           <p class="applies-para">Beauty</p>
+                       </div>
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/PC-QC/Rev/WF-4-186-116-min._SY116_CB577681584_.png" alt="">
+                           <p class="applies-para">Fashion Jewellery</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="item5-container">
+                <div > &nbsp; PC components and <br> &nbsp; storage devices</div>
+                <br>
+                   <div class="jemu1-container">
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/CEPC/PC-Acc/Jupiter-QC-PC/QC_PC_1._SY116_CB577637979_.jpg" alt="">
+                           <p class="applies-para">Gaming headphones</p>
+                       </div>
+                   
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/CEPC/PC-Acc/Jupiter-QC-PC/QC_PC_2._SY116_CB577637979_.jpg" alt="">
+                           <p class="applies-para">keybord</p>
+                       </div>
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/CEPC/PC-Acc/Jupiter-QC-PC/QC_PC_3._SY116_CB577637979_.jpg" alt="">
+                           <p class="applies-para">storage device</p>
+                       </div>
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/CEPC/PC-Acc/Jupiter-QC-PC/QC_PC_4._SY116_CB577637979_.jpg" alt="">
+                           <p class="applies-para">components</p>
+                       </div>
+                   </div>
+
+               </div>
+               <div class="item6-container">
+                <div > &nbsp; Starting ₹59 | Grocery <br> &nbsp;  deals | Amazon brands &</div>
+                <br>
+                   <div class="jemu1-container">
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Deeksha/PC_QC_186x116_1._SY116_CB575802880_.jpg" alt="">
+                           <p class="applies-para">coocking assensial</p>
+                       </div>
+                   
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Deeksha/PC_QC_186x116_2._SY116_CB575802880_.jpg" alt="">
+                           <p class="applies-para">Rice flours</p>
+                       </div>
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Deeksha/PC_QC_186x116_3._SY116_CB575802880_.jpg" alt="">
+                           <p class="applies-para">Spicves and masalas</p>
+                       </div>
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Deeksha/PC_QC_186x116_4._SY116_CB575802880_.jpg" alt="">
+                           <p class="applies-para">fruits & nuts</p>
+                       </div>
+                   </div>
+
+               </div>
+               <div class="item7-container">
+                <div > &nbsp; Great Indian Festival | <br> &nbsp; Brands in focus </div>
+                <br>
+                   <div class="jemu1-container">
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Samsung/Jup_2023/SocialMedia/Jupiter1_Desktop_QuadImageCard_186X116._SY116_CB575922043_.jpg" alt="">
+                           <p class="applies-para">Mobiles</p>
+                       </div>
+                   
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/Manjula/jupiter2023/newt3/2_PC_QuadCard_186X116_1_6._SY116_CB577454036_.jpg" alt="">
+                           <p class="applies-para">intel powerd leptop</p>
+                       </div>
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/Manjula/jupiter2023/sam_TV_186x116_10._SY116_CB578611685_.jpg" alt="">
+                           <p class="applies-para">Samsung TVs</p>
+                       </div>
+                       <div class="jemu1">
+                           <img class="applies" src="https://images-eu.ssl-images-amazon.com/images/G/31/Manjula/jupiter2023/sam_LA-186x116_1_10._SY116_CB578611685_.jpg" alt="">
+                           <p class="applies-para">Samsung applinces</p>
+                       </div>
+                   </div>
+
+               </div>
+             
+            
+
+        </div>
+        
+    </div>
+    <br>
+    <!-- <div style="display: flex; "><p style="color: black;">Blockbuster deals</p> </div> -->
+    <div class="third-container">
+        
+            <div class="third-item1">
+                <div>Blockbuster deals   <span  style="color: blue;  font-size: 17px;padding-left: 20px; "> See all deals</span></div>
+            </div>
+            <div class="third-item2">
+                    <div class="third-product">
+                        <img class="third-photo" src="https://m.media-amazon.com/images/I/51x5Cq1anML._AC_SY200_.jpg" alt="">
+                        <button class="third-button">Up to 89% off</button> <span class="third-span"> Great Indian Festival</span>
+                        <p class="third-para">Fire-Boltt Ninja 3 Smartwatch Full....</p>
+                    </div>
+                    <div class="third-product">
+                        <img  class="third-photo"  src="https://m.media-amazon.com/images/I/41dEcQR7UnL._AC_SY200_.jpg" alt="">
+                        <button class="third-button">Up to 27% off</button> <span class="third-span"> Great Indian Festival</span>
+                        <p class="third-para">Realme Narzo N53 || starting from 7999</p>
+                    
+                    </div>
+                    <div class="third-product">
+                        <img class="third-photo" src="https://m.media-amazon.com/images/I/41L1Fw2xgOL._AC_SY200_.jpg" alt="">
+                        <button class="third-button">Up to 51% off</button> <span class="third-span"> Great Indian Festival</span>
+                        <p class="third-para">Grab Or Gone FEstival offer's...Tablet</p>
+                    
+                    </div>
+                    <div class="third-product">
+                        <img  class="third-photo-2"  src="https://m.media-amazon.com/images/I/41a4-vgETkL._AC_SY200_.jpg" alt="">
+                        <button class="third-button">Up to 39% off</button> <span class="third-span"> Great Indian Festival</span>
+                        <p class="third-para">Top Rated Leptops: 4 star and Unbeaten....</p>
+                    </div>
+                    <div class="third-product">
+                        <img  class="third-photo"  src="https://m.media-amazon.com/images/I/31hXqtvutdL._AC_SY200_.jpg" alt="">
+                        <button class="third-button">Up to 80% off</button> <span class="third-span"> Great Indian Festival</span>
+                        <p class="third-para">Top Headphones from Oneplus,Samsung....</p>
+                    </div>
+            </div>
+           
+
+           
+    </div>
+    <div class="fourth-container">
+        <div class="fourth-child1">
+            <div>Starting ₹99 + 20% cashback on first order | Beauty & makeup<span  style="color: blue;  font-size: 17px;padding-left: 20px; "> See all offers</span></div>
+        </div>
+        <div class="fourth-child2">
+            <div class="fourth-product">
+                <img src="https://m.media-amazon.com/images/I/51FF5ZTyoyL._AC_SY200_.jpg" alt="">
+            </div>
+            <div class="fourth-product">
+                <img src="https://m.media-amazon.com/images/I/51PlkfLpWWL._AC_SY200_.jpg" alt="">
+            </div>
+            <div class="fourth-product">
+                <img src="https://m.media-amazon.com/images/I/51oqK68kcFL._AC_SY200_.jpg" alt="">
+            </div>
+            <div class="fourth-product">
+                <img src="https://m.media-amazon.com/images/I/41GeKsxBySL._AC_SY200_.jpg" alt="">
+            </div>
+            <div class="fourth-product">
+                <img src="https://m.media-amazon.com/images/I/41sXjSVQrbL._AC_SY200_.jpg" alt="">
+            </div>
+            <div class="fourth-product">
+                <img src="https://m.media-amazon.com/images/I/518i9EgA+xL._AC_SY200_.jpg" alt="">
+            </div>
+            <div class="fourth-product">
+                <img src="https://m.media-amazon.com/images/I/61vyDZJ0jWL._AC_SY200_.jpg" alt="">
+            </div>
+            <div class="fourth-product">
+                <img src="https://m.media-amazon.com/images/I/4144RsyyeSL._AC_SY200_.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="fifth-container">
+        <div >
+            <img class="fifth-photo" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/AmazonPay/Jupiter23/Event/Train_GW_editorial_2300x646._CB575880778_.jpg" alt="">
+        </div>
+    </div>
+    <div class="sixth-container">
+        <div class="sixth-child1">
+            <div>Starting ₹799 | Bestselling smartwatches from top brands <span  style="color: blue;  font-size: 17px;padding-left: 20px; "> See all deals</span></div>
+        </div>
+        <div class="sixth-child2">
+            <div>
+                <img class="fifth-photo" src="https://m.media-amazon.com/images/I/61y2VVWcGBL._AC_SY200_.jpg" alt="">
+            </div>
+            <div>
+                <img class="fifth-photo" src="https://m.media-amazon.com/images/I/61BY9Mhhj2L._AC_SY200_.jpg" alt="">
+            </div>
+            <div>
+                <img class="fifth-photo" src="https://m.media-amazon.com/images/I/61yhPPcmesL._AC_SY200_.jpg" alt="">
+            </div>
+            <div>
+                <img class="fifth-photo" src="https://m.media-amazon.com/images/I/61AHiYyu3ZL._AC_SY200_.jpg" alt="">
+            </div>
+            <div><img class="fifth-photo" src="https://m.media-amazon.com/images/I/71IqWwSIxwL._AC_SY200_.jpg" alt=""></div>
+            <div>
+                <img class="fifth-photo" src="https://m.media-amazon.com/images/I/61ArSKA048L._AC_SY200_.jpg" alt="">
+            </div>
+            <div>
+                <img class="fifth-photo" src="https://m.media-amazon.com/images/I/71wXX5IRnzL._AC_SY200_.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
